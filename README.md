@@ -42,7 +42,7 @@ java -jar -Dserver.port=XXXX target/YYYYY.jar. We will create 3 instances of thi
 
 Now go to http://localhost:8761/ in browser and check that eureka server is running with all microservices are registed with desired number of instances.
 
-![](./servicediscoveryeureka/img/Eureka.png)
+![](Eureka.png)
 
 
 ## Test Eureka Client / Ribbon Server
@@ -54,4 +54,4 @@ We will now verify that the "/student-details-for-school/{schoolname}" endpoint 
 Now test the client url. You will get response from the registered instances only. Now if you start new instance of backend microservice in different port, Ribbon will not send request to the new instance until we register that manually in the ribbon.
 Open the client microservice rest endpoint http://localhost:9098/port and see that response is coming from any one of the backend instance.
 
-![](./img/RibbonClient.png)
+![](RibbonClient.png)
