@@ -52,19 +52,16 @@ public class StudentController {
         return studentList;
     }
 
-    @GetMapping("/")
-    public String greeting(){
-        return "Hello, there!";
-    }
 
-    @GetMapping("/backend")
+
+    @GetMapping("/port")
     public String backend(){
-        System.out.println("StudentController::backend...");
+        System.out.println("StudentController::port...");
 
         String serverPort = environment.getProperty("local.server.port");
 
         System.out.println("Port : " + serverPort);
 
-        return "Hello from Backend!!! " + " Host : localhost " + " :: Port : " + serverPort;
+        return "Hello from Ribbon server!!! " + " Host : localhost " + " :: Port : " + serverPort;
     }
 }

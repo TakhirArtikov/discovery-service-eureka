@@ -27,14 +27,9 @@ public class SchoolController {
         return "School Name -  " + schoolName + " \n Student Details " + response;
     }
 
-    @GetMapping("/")
-    public String greeting(){
-        return "Hello";
-    }
-
     @RequestMapping("/port")
     public String hi() {
-        String hello = this.restTemplate.getForObject("http://server/backend", String.class);
+        String hello = this.restTemplate.getForObject("http://server/port", String.class);
         return hello;
     }
 
