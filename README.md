@@ -36,7 +36,7 @@ Eureka first, then the ribbon server and finally the ribbon client.
 To start each microservice, we will use `java -jar -Dserver.port=XXXX target/YYYYY.jar` command.
 
 To deploy multiple instances of ribbon server we need to use different port for this, to start service in a specific port we need to pass the port in this way.
-`java -jar -Dserver.port=XXXX target/YYYYY.jar`. We will create 3 instances of this service in ports 9090, 9091 and 9092 ports.
+`java -jar -Dserver.port=XXXX target/YYYYY.jar`. We will create 3 instances of this service in ports 8096, 8097 and 8098 ports.
 
 ## Verify Eureka Server
 
